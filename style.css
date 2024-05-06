@@ -112,6 +112,11 @@ section.topo .flex{
     max-height: 400px;
     width: auto;
     height: auto;
+    transition: .2s;
+}
+
+.img-topo-site img:hover{
+    transform: scale(1.05);
 }
 
 /*TEORIAS*/
@@ -150,6 +155,11 @@ section.teorias .flex{
     max-height: 500px;
     width: auto;
     height: auto;
+    transition: .2s;
+}
+
+.img-teorias img:hover{
+    transform: scale(1.05);
 }
 
 /*BOTÕES TEORIAS*/
@@ -413,6 +423,11 @@ section.consequencias .flex{
     max-height: 500px;
     width: auto;
     height: auto;
+    transition: .2s;
+}
+
+.img-consequencias img:hover{
+    transform: scale(1.05);
 }
 
 /*FOOTER*/
