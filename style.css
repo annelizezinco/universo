@@ -153,13 +153,14 @@ section.teorias .flex{
 }
 
 /*BOTÕES TEORIAS*/
-.botao{
+    ul.botao{
         list-style-type: none;
         display: inline-flex;
         position: relative;
-        gap: 50px;
-    
-    ul li{
+        gap: 60px;
+    }
+
+    ul.botao li{
         width: 80px;
         height: 80px;
         background-color: #de5c74;
@@ -172,22 +173,22 @@ section.teorias .flex{
         transition: .2s;
     }
     
-    ul li:hover{
+    ul.botao li:hover{
         width: 180px;
     }
     
-    ul li span{
+    ul.botao li span{
         position: absolute;
     }
     
-    ul li .icone i{
+    ul.botao li .icone i{
         color: #ffffff;
         font-size: 2.2em;
         transition: .2s;
         transition-delay: .1s;
     }
     
-    ul li .texto{
+    ul.botao li .texto{
         color: #ffffff;
         font-size: 20px;
         transform: scale(0);
@@ -195,17 +196,17 @@ section.teorias .flex{
         transition-delay: .1s;
     }
     
-    ul li:hover .texto{
+    ul.botao li:hover .texto{
         transform: scale(1);
     }
     
-    ul li:hover .icone{
+    ul.botao li:hover .icone{
         transform: scale(0);
         transition: .2s;
         transition-delay: .1s;
     }
     
-    ul li::before{
+    ul.botao li::before{
         content: '';
         position: absolute;
         background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
@@ -214,10 +215,9 @@ section.teorias .flex{
         border-radius: 60px;
     }
     
-    ul li:hover::before{
+    ul.botao li:hover::before{
         opacity: 1;
     }
-}
 
 /*TEORIA 1*/
 section.teoria-1{
@@ -275,7 +275,6 @@ section.teoria-2 .flex{
     border-radius: 25px;
     border: 2px solid #000000;
     margin-top: 45px;
-    transition: .2s;
 }
 
 .teoria-2 .teorias-box:hover{
