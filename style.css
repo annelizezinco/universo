@@ -1,0 +1,440 @@
+*{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000000;
+    height: 100hv;
+}
+
+.interface{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.interface img{
+    max-width: 400px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+/*CABEÇALHO*/
+header{
+    padding: 40px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #6d6d6d;
+    transition: .2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 40px;
+}
+
+header .criado-por button{
+    background-color: #de5c74;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+header .criado-por button:hover{
+    box-shadow: 0px 0px 8px #de5c74;
+}
+
+/*TOPO*/
+section.topo{
+    padding: 40px 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo .txt-topo-site h1 span{
+    color: #de5c74;
+    display: inline;
+    font-size: 42px;
+}
+
+.topo .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+    font-size: 20px;
+}
+
+.img-topo-site img{
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+}
+
+/*TEORIAS*/
+section.teorias{
+    padding: 40px 4%;
+}
+
+section.teorias .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.teorias h2{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.teorias .txt-teorias p{
+    color: #fff;
+    margin: 40px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.teorias .txt-teorias h2 span{
+    color: #de5c74;
+    display: inline-block;
+    font-size: 42px;
+}
+
+.img-teorias img{
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+/*BOTÕES TEORIAS*/
+.botao{
+        list-style-type: none;
+        display: inline-flex;
+        position: relative;
+        gap: 50px;
+    
+    ul li{
+        width: 80px;
+        height: 80px;
+        background-color: #de5c74;
+        box-shadow: 0 8px 25px #de5c74;
+        border-radius: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        transition: .2s;
+    }
+    
+    ul li:hover{
+        width: 180px;
+    }
+    
+    ul li span{
+        position: absolute;
+    }
+    
+    ul li .icone i{
+        color: #ffffff;
+        font-size: 2.2em;
+        transition: .2s;
+        transition-delay: .1s;
+    }
+    
+    ul li .texto{
+        color: #ffffff;
+        font-size: 20px;
+        transform: scale(0);
+        transition: .2s;
+        transition-delay: .1s;
+    }
+    
+    ul li:hover .texto{
+        transform: scale(1);
+    }
+    
+    ul li:hover .icone{
+        transform: scale(0);
+        transition: .2s;
+        transition-delay: .1s;
+    }
+    
+    ul li::before{
+        content: '';
+        position: absolute;
+        background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+        inset: 0;
+        opacity: 0;
+        border-radius: 60px;
+    }
+    
+    ul li:hover::before{
+        opacity: 1;
+    }
+}
+
+/*TEORIA 1*/
+section.teoria-1{
+    padding: 10px 4%;
+}
+
+section.teoria-1 .flex{
+    gap: 60px;
+}
+
+.teoria-1 .teorias-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.teoria-1 .teorias-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff77;
+}
+
+.teoria-1 .teorias-box i{
+    font-size: 60px;
+    color: #de5c74;
+    padding: 20px;
+}
+
+.teoria-1 .teorias-box h3{
+    position: center;
+    display: inline-block;
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.teoria-1 .teorias-box p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*TEORIA 2*/
+section.teoria-2{
+    padding: 10px 4%;
+}
+
+section.teoria-2 .flex{
+    gap: 60px;
+}
+
+.teoria-2 .teorias-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.teoria-2 .teorias-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff77;
+}
+
+.teoria-2 .teorias-box i{
+    font-size: 60px;
+    color: #de5c74;
+    padding: 20px;
+}
+
+.teoria-2 .teorias-box h3{
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.teoria-2 .teorias-box p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*TEORIA 3*/
+section.teoria-3{
+    padding: 10px 4%;
+}
+
+section.teoria-3 .flex{
+    gap: 60px;
+}
+
+.teoria-3 .teorias-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.teoria-3 .teorias-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff77;
+}
+
+.teoria-3 .teorias-box i{
+    font-size: 60px;
+    color: #de5c74;
+    padding: 20px;
+}
+
+.teoria-3 .teorias-box h3{
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.teoria-3 .teorias-box p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*TEORIA 4*/
+section.teoria-4{
+    padding: 10px 4%;
+}
+
+section.teoria-4 .flex{
+    gap: 60px;
+}
+
+.teoria-4 .teorias-box{
+    color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    margin-top: 45px;
+    transition: .2s;
+    margin-bottom: 100px;
+}
+
+.teoria-4 .teorias-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff77;
+}
+
+.teoria-4 .teorias-box i{
+    font-size: 60px;
+    color: #de5c74;
+    padding: 20px;
+}
+
+.teoria-4 .teorias-box h3{
+    font-size: 32px;
+    margin: 15px 0;
+}
+
+.teoria-4 .teorias-box p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*CONSEQUÊNCIAS*/
+section.consequencias{
+    padding: 40px 4%;
+}
+
+section.consequencias .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.consequencias h2{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.consequencias .txt-consequencias p{
+    color: #fff;
+    margin: 40px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.consequencias .txt-consequencias h2 span{
+    color: #de5c74;
+    display: inline-block;
+    font-size: 42px;
+}
+
+.img-consequencias img{
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+
+/*FOOTER*/
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #ffffff77;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+.linha-footer p{
+    color: #fff;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.linha-footer i{
+    padding: 40px;
+    color: #de5c74;
+    font-size: 50px;
+    text-align: justify;
+}
